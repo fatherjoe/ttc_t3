@@ -231,11 +231,18 @@
 // Dropdowns Caret in Nav
 // ----------------------
 // Make dropdown carets use link color in navs
+.caret:before  {
+  content: "\e114"; // chevron-down
+}
+
 .nav .caret {
-  border-top-color: @link-color;
-  border-bottom-color: @link-color;
-  border-bottom-width: 0;
-  border-style: solid;
+  font-family: 'Glyphicons Halflings', sans-serif;
+  font-style: normal;
+  font-size: smaller;
+  width: 16px;
+  height: 18px;
+  border: none;
+  margin-left: 5px;
 }
 
 .nav a:hover .caret {
@@ -243,9 +250,6 @@
   border-bottom-color: @link-hover-color;
 }
 
-.caret:before  {
-   content: "\e114"; // chevron-down
-}
 
 // 
 // BREADCRUMS (breadcrums.less)
