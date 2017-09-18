@@ -18,7 +18,7 @@
 }
 .com_config #templates-form .input-append .btn,
 .com_config #templates-form .input-prepend .btn {
-  border: 1px solid #1f1f1f;
+  border: 1px solid #cccccc;
 }
 .com_config #templates-form .t3-admin-form-legend {
   display: none;
@@ -44,7 +44,7 @@
 }
 .com_config #modules-form .input-append .btn,
 .com_config #modules-form .input-prepend .btn {
-  border: 1px solid #1f1f1f;
+  border: 1px solid #cccccc;
 }
 .com_config #modules-form .accordion-group {
   margin-bottom: 20px;
@@ -109,8 +109,78 @@
 }
 .edit .input-append .btn,
 .edit .input-prepend .btn {
-  border: 1px solid #1f1f1f;
-  background-color: #2d2d2d;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.edit.item-page #jform_com_fields_checkboxs label.checkbox,
+.profile-edit #jform_com_fields_checkboxs label.checkbox {
+  display: inline-block;
+  margin-right: 10px;
+}
+.edit.item-page #jform_com_fields_checkboxs input[type="checkbox"],
+.profile-edit #jform_com_fields_checkboxs input[type="checkbox"] {
+  margin-left: 0;
+  margin-top: -2px;
+  position: relative;
+  vertical-align: middle;
+  width: auto;
+}
+.edit.item-page .minicolors-input,
+.profile-edit .minicolors-input {
+  height: 28px;
+  width: auto;
+}
+.profile-edit #jform_com_fields_user_checkbox label.checkbox {
+  display: inline-block;
+  margin-right: 10px;
+}
+.profile-edit #jform_com_fields_user_checkbox input {
+  position: relative;
+  margin-left: 0;
+  margin-right: 5px;
+  width: auto;
+}
+.profile-edit .minicolors-input {
+  height: 28px;
+  width: auto;
+}
+.profile-edit #jform_com_fields_user_image_chzn .chzn-search {
+  box-sizing: border-box;
+}
+.profile-edit #jform_com_fields_user_image_chzn ul.chzn-results {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.profile-edit #jform_com_fields_user_calendar {
+  float: left;
+}
+.profile-edit .chzn-container-single,
+.profile-edit .chzn-container {
+  float: left;
+  margin-right: 10px;
+}
+@media screen and (max-width: 360px) {
+  .profile-edit .chzn-container-single,
+  .profile-edit .chzn-container {
+    width: 100% !important;
+  }
+}
+.profile-edit .chzn-container-single .chzn-drop,
+.profile-edit .chzn-container .chzn-drop {
+  box-sizing: border-box !important;
+}
+.profile #users-profile-core {
+  width: 100%;
+}
+.profile .dl-horizontal dd {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+.profile .dl-horizontal dd img {
+  max-width: 100%;
 }
 .edit .nav-tabs {
   margin-bottom: 20px;
@@ -130,9 +200,9 @@
 }
 #editor-xtd-buttons .btn,
 .toggle-editor .btn {
-  background-color: #2d2d2d;
+  background-color: #ffffff;
   text-shadow: 0 1px 0 #fff;
-  border-color: #1f1f1f;
+  border-color: #cccccc;
 }
 #editor-xtd-buttons {
   margin-right: 30px;
@@ -193,7 +263,7 @@
   float: left;
 }
 .window #imageForm #upbutton {
-  border: 1px solid #1f1f1f;
+  border: 1px solid #cccccc;
   float: left;
   padding: 3px 12px;
   margin-left: 5px;
@@ -275,7 +345,7 @@
   left: -1px;
   z-index: 1;
   text-transform: uppercase;
-  background: url(../../../../../../plugins/system/t3/base-bs3/imgs/blank.gif) no-repeat transparent;
+  background: url(../../../../plugins/system/t3/base-bs3/imgs/blank.gif) no-repeat transparent;
   text-indent: -999em;
 }
 .t3onoff label:before,
@@ -432,6 +502,18 @@ fieldset.radio.btn-group label.active {
   content: "\f00d";
   font-family: "FontAwesome";
 }
+.icon-publish:before {
+  content: "\f00c";
+}
+.icon-unpublish:before {
+  content: "\f00d";
+}
+.icon-featured:before {
+  content: "\f005";
+}
+.icon-unfeatured:before {
+  content: "\f005";
+}
 .button2-left,
 .button2-left div {
   float: left;
@@ -450,9 +532,9 @@ fieldset.radio.btn-group label.active {
 .button2-right a,
 .button2-left span,
 .button2-right span {
-  background: #878787;
-  border: 1px solid #7a7a7a;
-  color: #5a5a5a;
+  background: #eeeeee;
+  border: 1px solid #e1e1e1;
+  color: #999999;
   cursor: pointer;
   display: block;
   float: left;
@@ -461,7 +543,7 @@ fieldset.radio.btn-group label.active {
 }
 .button2-left span,
 .button2-right span {
-  color: #5a5a5a;
+  color: #999999;
   cursor: default;
 }
 .button2-left .page a,
@@ -472,8 +554,8 @@ fieldset.radio.btn-group label.active {
 }
 .button2-left a:hover,
 .button2-right a:hover {
-  background: #7a7a7a;
-  color: #2d2d2d;
+  background: #e1e1e1;
+  color: #333333;
   text-decoration: none;
 }
 .edit.item-page a.modal,
@@ -486,9 +568,9 @@ fieldset.radio.btn-group label.active {
 }
 .edit.item-page a.modal.btn,
 .com_config form a.modal.btn {
-  background: #2d2d2d;
+  background: #ffffff;
   text-shadow: 0 1px 0 #fff;
-  border-color: #1f1f1f;
+  border-color: #cccccc;
   overflow: hidden;
 }
 .controls img.calendar {
