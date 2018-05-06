@@ -606,6 +606,9 @@ textarea.form-control {
 .form-horizontal .form-control-static {
   padding-top: 7px;
 }
+.btn-primary {
+  background-color: #a80000;
+}
 .btn-inverse {
   color: #ffffff;
   background-color: #333333;
@@ -806,6 +809,11 @@ input.invalid {
     padding: 10px 15px;
     display: inline-block;
   }
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #ab0000;
 }
 .nav .caret {
   border-top-color: #cc0000;

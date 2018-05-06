@@ -2,8 +2,8 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>ttc_t3</name>
-	<version>2.2.8</version>
-	<creationDate>Sep 29 2017</creationDate>
+	<version>2.2.9</version>
+	<creationDate>May 04 2018</creationDate>
 	<author>Jörg Vater</author>
 	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
 	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
@@ -20,7 +20,7 @@
 				<p>Copyright 2017 <a href='http://www.ttc-woeschbach.de/' title='Visit TTC Wöschbach!'>TTC Wöschbach</a>.</p>
 				<p> </p>
 				<span style="color:#FF0000">Note: T3 blank requires T3 plugin to be installed and enabled.</span><p></p>
-				<p>Copyright 2004 - 2017 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+				<p>Copyright 2004 - 2018 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
 			</div>
 			<style>table.adminform{width: 100%;}</style>
 		</div>
