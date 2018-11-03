@@ -2,8 +2,8 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>ttc_t3</name>
-	<version>2.3.0</version>
-	<creationDate>July 05 2018</creationDate>
+	<version>2.3.1</version>
+    <creationDate>Nov 01, 2018</creationDate>
 	<author>Jörg Vater</author>
 	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
 	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
