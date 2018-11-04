@@ -275,6 +275,11 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 .lead {
   margin-bottom: 20px;
@@ -795,7 +800,7 @@ input.invalid {
 .nav > li > .separator {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 10px;
   line-height: 20px;
 }
 @media (min-width: 768px) {
@@ -806,7 +811,7 @@ input.invalid {
 }
 @media (max-width: 1069px) {
   .nav > li > span {
-    padding: 10px 15px;
+    padding: 10px 10px;
     display: inline-block;
   }
 }
@@ -815,11 +820,17 @@ input.invalid {
 .nav-pills > li.active > a:focus {
   background-color: #00629a;
 }
+.caret:before {
+  content: "\e114";
+}
 .nav .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
-  border-bottom-width: 0;
-  border-style: solid;
+  font-family: 'Glyphicons Halflings', sans-serif;
+  font-style: normal;
+  font-size: smaller;
+  width: 16px;
+  height: 18px;
+  border: none;
+  margin-left: 5px;
 }
 .nav a:hover .caret {
   border-top-color: #d9d9d9;
@@ -827,9 +838,14 @@ input.invalid {
 }
 .t3-navhelper {
   background: #2d2d2d;
-  border-top: 1px solid #2d2d2d;
-  color: #4b4b4b;
+  border-top: 1px solid #1f1f1f;
+  color: #ffffff;
   padding: 5px 0;
+  text-align: center;
+  background-color: #1f1f1f;
+}
+.t3-navhelper .container {
+  background-color: #547dcc;
 }
 .breadcrumb {
   margin-bottom: 0;
@@ -1020,8 +1036,8 @@ input.invalid {
 .t3-mainnav .t3-navbar {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 @media (min-width: 768px) {
   .t3-mainnav .t3-navbar-collapse {
@@ -1315,7 +1331,7 @@ ul.latestusers li {
 .article-content .img_caption.left,
 .article-intro .pull-left.item-image,
 .article-content .pull-left.item-image {
-  margin: 0 30px 20px 0;
+  margin: 0 24px 20px 0;
   max-width: 50%;
   min-width: 320px;
 }
@@ -1325,8 +1341,18 @@ ul.latestusers li {
 .article-content .img_caption.right,
 .article-intro .pull-right.item-image,
 .article-content .pull-right.item-image {
-  margin: 0 0 20px 30px;
+  margin: 0 0 20px 24px;
   max-width: 50%;
+  min-width: 320px;
+}
+.pull-left.item-image {
+  margin: 0 24px 20px 0;
+  max-width: 70%;
+  min-width: 320px;
+}
+.pull-right.item-image {
+  margin: 0 0 20px 24px;
+  max-width: 70%;
   min-width: 320px;
 }
 @media (max-width: 768px) {
@@ -2710,12 +2736,16 @@ a.list-group-item.active:focus .list-group-item-text {
     padding-top: 0px;
     padding-left: 25px;
     padding-right: 25px;
+    position: relative;
   }
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-bottom: 10px;
+  }
+  .banneritem > a > img {
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1069px) {
